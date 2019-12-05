@@ -27,8 +27,7 @@ def process_instruction(opcode, input):
 #intcode_input = [1,1,1,4,99,5,6,0,99]
 intcode_input = []
 with open("input.txt", 'r') as file:
-    intcode_input = file.readline().strip("\n").split(",")
-intcode_input = [int(x) for x in intcode_input]
+    intcode_input = [int(x) for x in file.readline().strip("\n").split(",")]
 """
 Once you have a working computer, the first step is to restore the gravity assist program (your puzzle input) to the
 "1202 program alarm" state it had just before the last computer caught fire. To do this, before running the program,
